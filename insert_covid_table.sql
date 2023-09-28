@@ -9,8 +9,8 @@ date VARCHAR(255),
 total_cases	double,
 new_cases double,
 new_cases_smoothed double,
-total_deaths double, #int
-new_deaths double, #int
+total_deaths double,
+new_deaths double,
 new_deaths_smoothed double,
 total_cases_per_million double,
 new_cases_per_million double,
@@ -19,16 +19,16 @@ total_deaths_per_million double,
 new_deaths_per_million double,
 new_deaths_smoothed_per_million double,
 reproduction_rate double,
-icu_patients double, #int
+icu_patients double,
 icu_patients_per_million double,
-hosp_patients double, #int
+hosp_patients double,
 hosp_patients_per_million double,
 weekly_icu_admissions double,
 weekly_icu_admissions_per_million double,
 weekly_hosp_admissions double,
 weekly_hosp_admissions_per_million double,
-new_tests double, #int
-total_tests double, #int
+new_tests double,
+total_tests double,
 total_tests_per_thousand double,
 new_tests_per_thousand double,
 new_tests_smoothed double,
@@ -36,17 +36,17 @@ new_tests_smoothed_per_thousand double,
 positive_rate double,
 tests_per_case double,
 tests_units VARCHAR(255),
-total_vaccinations double, #int
-people_vaccinated double, #int
-people_fully_vaccinated double, #int
-new_vaccinations double, #int
-new_vaccinations_smoothed double, #int
+total_vaccinations double,
+people_vaccinated double,
+people_fully_vaccinated double,
+new_vaccinations double,
+new_vaccinations_smoothed double,
 total_vaccinations_per_hundred double, 
 people_vaccinated_per_hundred double, 
 people_fully_vaccinated_per_hundred double,
 new_vaccinations_smoothed_per_million double,
-stringency_index double, #int
-population double, #int
+stringency_index double,
+population double,
 population_density double, 
 median_age double,
 aged_65_older double,
