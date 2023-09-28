@@ -6,7 +6,7 @@ CREATE TABLE covid_new
 continent VARCHAR(255),
 location VARCHAR(255),
 date VARCHAR(255),
-total_cases	double,
+total_cases double,
 new_cases double,
 new_cases_smoothed double,
 total_deaths double,
