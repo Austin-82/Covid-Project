@@ -1,5 +1,4 @@
 --Create MySQL table to prepare for CSV loading
-
 USE covid_p
 
 CREATE TABLE covid_new
@@ -65,7 +64,6 @@ human_development_index double
 );
 
 --load csv file into MySql. if cell value blank, input null
-
 LOAD DATA LOCAL INFILE '/Users/austinshirk/Documents/cs/Projects/Covid_Project/CovidDeaths.csv'
 INTO TABLE covid_new
 FIELDS TERMINATED BY ","
@@ -144,12 +142,10 @@ SET
 
 
 --change 'date' column datatype from string to date by first adding a 'new_date' column
-
 ALTER TABLE covid_new
 add column new_date DATE;
 
 -- Update the 'new_date' column by converting 'date' values to the date format.
-
 UPDATE covid_new
 SET new_date = str_to_date(date, '%m/%d/%y');
 
