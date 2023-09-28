@@ -63,7 +63,7 @@ life_expectancy double,
 human_development_index double
 );
 
---load csv file into MySql. if cell value blank, input null
+--load csv file into MySql. if cell is empty, input null
 LOAD DATA LOCAL INFILE '/Users/austinshirk/Documents/cs/Projects/Covid_Project/CovidDeaths.csv'
 INTO TABLE covid_new
 FIELDS TERMINATED BY ","
